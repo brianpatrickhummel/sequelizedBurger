@@ -26,6 +26,7 @@ var db = require("./models");
 
 // Import routes and give the server access to them.
 require('./controllers/burgers_controller.js')(app);
+
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({force:true}).then(function() {

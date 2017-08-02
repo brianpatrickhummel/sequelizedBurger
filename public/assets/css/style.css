@@ -5,26 +5,6 @@
 /* =================FONTS================= */
 
 @font-face {
-    font-family: 'DecoTech TL';
-    src: url('/assets/fonts/DecoTech\ TL.ttf');
-}
-
-@font-face {
-    font-family: 'Decotech';
-    src: url('/assets/fonts/DecoTech.ttf');
-}
-
-@font-face {
-    font-family: 'Duke Shadow';
-    src: url('/assets/fonts/Duke\ Shadow.otf');
-}
-
-@font-face {
-    font-family: 'Duke';
-    src: url('/assets/fonts/Duke.otf');
-}
-
-@font-face {
     font-family: 'GatsbyFLF-Bold';
     src: url('/assets/fonts/GatsbyFLF-Bold.ttf');
 }
@@ -32,11 +12,6 @@
 @font-face {
     font-family: 'GatsbyFLF';
     src: url('/assets/fonts/GatsbyFLF.ttf');
-}
-
-@font-face {
-    font-family: 'LongCoolWoman';
-    src: url('/assets/fonts/LongCoolWoman.ttf');
 }
 
 @font-face {

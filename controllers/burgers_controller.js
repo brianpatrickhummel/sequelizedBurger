@@ -1,6 +1,5 @@
 var db = require("../models");
 
-
 module.exports = function(app) {
   app.get("/", function(req, res){
     db.Burgers.findAll().then(function(result){
@@ -17,7 +16,6 @@ module.exports = function(app) {
     }).then(function(){
       res.redirect('/');
     });      
-   
   });
 
   app.put("/:id", function(req, res){

@@ -10,9 +10,10 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <form action="/{{this.id}}?_method=PUT" method="POST">
-              <input type="hidden" name="devour" value="1">
-              <button class="hvr-bubble-float-right" id="devourButton" type="submit">Devour</button>
+            <form action="" method="">
+              <input type="hidden" id="devour{{this.id}}" value="1">
+              <input type="hidden" id="burgerId{{this.id}}" value="{{this.id}}">
+              <button class="hvr-bubble-float-right" id="devourButton" type="submit" onclick="createQuery(this.form)">Devour</button>
             </form>
           </div>
         </div>

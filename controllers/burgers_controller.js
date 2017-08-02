@@ -18,15 +18,32 @@ module.exports = function(app) {
     });      
   });
 
-  app.put("/:id", function(req, res){
-    var update = {"devoured" : req.body.devour};
-    db.Burgers.update(update, {
+  app.put("/", function(req, res){
+    var customerId;
+    db.Customers.findOrCreate({
       where: {
-        id: req.params.id
+        customer_name: req.body.customer_name
       }
-    }).then(function(){
-      res.redirect('/');
-    });
+    })
+    .spread((user,created) => {
+      if (created) console.log("User created");
+      customerId = user.id;
+      console.log(customerId);
+      console.log(req.body.devoured);
+      console.log(req.body.id);
+      var update = {
+        "devoured" : req.body.devoured,
+        "CustomerId" : customerId
+      };
+      db.Burgers.update(update, {
+        where: {
+          id: req.body.id
+        }
+      }).then(function(){
+        // res.redirect('/');
+      });
+    })
+    
   });
 };
 

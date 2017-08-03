@@ -41,9 +41,7 @@ module.exports = function (app) {
           id: req.body.id
         }
       })
-    }).then(function () {
-      // res.redirect('/');    EEEEERRRRRRrRRRRRROOOOOORRRRRR
-    });
+    })
   });
 };
 

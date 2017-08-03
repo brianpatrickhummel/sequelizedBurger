@@ -61,22 +61,19 @@
           placeholder: 'The Hamburgler',
           callback: function (value) {
             customer_name=value.toUpperCase();
-            console.log(customer_name);
-            console.log(devour);
-            console.log(burgerId);
             var dataObject = {"id": burgerId, "devoured":devour, "customer_name": customer_name};
+            var URL = window.location.origin + "/devour";
+            console.log(URL);
             $.ajax({
-              url: window.location.origin,
+              url: URL,
               type: 'PUT',
               contentType: 'application/json',
               data: JSON.stringify(dataObject)
-            }).done({
-              
             });
           }
         })
       };
-      // Lure user into completing form via statement Animation
+      // Add Burger Statement Animation
       var elementExists = document.getElementById("burgers");
       var intervalID;
       if(elementExists === null) {
@@ -88,8 +85,6 @@
         }, 4000);
       } 
       else clearInterval(intervalID);
-      
-     
     </script>
   </body>
 </html>

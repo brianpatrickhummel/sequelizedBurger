@@ -40,7 +40,9 @@ module.exports = function (app) {
         where: {
           id: req.body.id
         }
-      })
+      }).then(function () {
+      res.redirect(303, '/');    
+    });
     })
   });
 };

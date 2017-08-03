@@ -75,6 +75,8 @@
             type: 'PUT',
             contentType: 'application/json',
             data: JSON.stringify(dataObject)
+          }).done(function(){
+            window.location.href = window.location.origin + '/'
           })
         }
       })

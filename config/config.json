@@ -17,7 +17,7 @@
   "production": {
     "username": "xtnfbk1x8m2k2ozo",
     "password": "r6hfdywgxm8tjnlu",
-    "database": "burgers_db",
+    "database": "u2xa8os2z7m87cn7",
     "host": "dyud5fa2qycz1o3v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }

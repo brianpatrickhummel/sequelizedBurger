@@ -8,4 +8,5 @@ Node.js-Express Web Server which utilizes Sequelize to interface with a MySQL da
 ## Front-End 
 Custom CSS.  Uses Vex jQuery library for Modal dialogue boxes and 'CSSShake' CSS animations.  Responsive-layout.
 
-* Deployed to Heroku using JawsDB for data.
+
+Deployed to Heroku using JawsDB for data.

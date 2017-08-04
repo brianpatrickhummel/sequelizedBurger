@@ -211,10 +211,8 @@ svg path {
   -o-transition: all 1s ease-in-out;
 }
 
-
-
 /* Hover.css - Devour Button */
-/* Bubble Float Right */
+/* style = Bubble Float Right */
 .hvr-bubble-float-right {
   display: inline-block;
   vertical-align: middle;
@@ -255,7 +253,7 @@ svg path {
 
 
 
-/* Media Queries */
+/* ====== Media Queries ====== */
 
 @media(max-width: 991px) {
   #mainHeader {
@@ -264,7 +262,6 @@ svg path {
     font-size: 88px;
   }
 }
-
 
 @media(max-width: 639px) {
   #mainHeader {

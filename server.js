@@ -21,7 +21,7 @@ app.set('view engine', 'handlebars');
 // Override with POST having ?_method=DELETE
 app.use(methodOverride('_method'));
 
-// Requiring our models for syncing
+// Requiring our models for syncing 
 var db = require("./models");
 
 // Import routes and give the server access to them.
